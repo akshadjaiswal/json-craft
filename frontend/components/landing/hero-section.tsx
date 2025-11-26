@@ -1,11 +1,22 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+import { ThemeToggle } from '@/components/ui/theme-toggle'
 import { ArrowRight, Github } from 'lucide-react'
 
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden border-b bg-gradient-to-b from-background to-muted/20">
-      <div className="container mx-auto px-4 py-20 md:py-32">
+      {/* Header with Logo and Theme Toggle */}
+      <div className="absolute top-0 left-0 right-0 z-10">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <span className="font-mono text-xl font-bold">
+            <span className="text-brand-primary">JSON</span>Craft
+          </span>
+          <ThemeToggle />
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 py-20 md:py-32 pt-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left: Content */}
           <div className="flex flex-col gap-6">
