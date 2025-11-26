@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Github, Twitter, Heart } from 'lucide-react'
+import { Github, X, Heart } from 'lucide-react'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -20,7 +20,7 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-4 mt-6">
               <a
-                href="https://github.com/yourusername/json-craft"
+                href="https://github.com/akshadjaiswal/json-craft"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -28,12 +28,12 @@ export function Footer() {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://twitter.com/yourusername"
+                href="https://x.com/akshad_999"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
-                <Twitter className="h-5 w-5" />
+                <X className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -66,7 +66,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="https://github.com/yourusername/json-craft"
+                  href="https://github.com/akshadjaiswal/json-craft"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
@@ -76,7 +76,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/yourusername/json-craft/issues"
+                  href="https://github.com/akshadjaiswal/json-craft/issues"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
@@ -86,7 +86,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/yourusername/json-craft/blob/main/LICENSE"
+                  href="https://github.com/akshadjaiswal/json-craft/blob/main/LICENSE"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"

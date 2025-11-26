@@ -51,10 +51,7 @@ export function CodeEditor({
           top: 16,
           bottom: 16,
         },
-        suggest: {
-          enabled: !readOnly,
-        },
-        quickSuggestions: !readOnly,
+        quickSuggestions: readOnly ? false : undefined,
         ...props.options,
       }}
       {...props}

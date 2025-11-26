@@ -48,7 +48,7 @@ export function HeroSection() {
                 </Button>
               </Link>
               <a
-                href="https://github.com/yourusername/json-craft"
+                href="https://github.com/akshadjaiswal/json-craft"
                 target="_blank"
                 rel="noopener noreferrer"
               >
