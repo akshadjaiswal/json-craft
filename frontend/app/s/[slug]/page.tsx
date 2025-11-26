@@ -83,8 +83,8 @@ export default function SharedConversionPage({ params }: { params: Promise<{ slu
       <main className="flex-1 min-h-0">
         <div className="container mx-auto h-full px-4 py-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 h-full">
-            {/* Left: JSON Input (Read-only) */}
-            <div className="min-h-[500px] lg:min-h-0 opacity-90 pointer-events-none">
+            {/* Left: JSON Input (Read-only but scrollable) */}
+            <div className="min-h-[500px] lg:min-h-0 [&_button]:pointer-events-none [&_button]:opacity-50">
               <JsonInputPanel />
             </div>
 

@@ -17,7 +17,7 @@ export function JsonInputPanel() {
   const { jsonInput, setJsonInput, formatInput, clear, loadExample, error } = useEditorStore()
 
   return (
-    <div className="flex flex-col h-full border rounded-lg overflow-hidden bg-card">
+    <div className="flex flex-col h-full border rounded-lg overflow-hidden bg-card shadow-sm">
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-3 border-b bg-muted/50">
         <div className="flex items-center gap-2">

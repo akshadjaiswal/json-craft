@@ -27,11 +27,11 @@ export function HeroSection() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium tracking-tight">
               Convert JSON to{' '}
               <span className="text-brand-primary">TypeScript</span>,{' '}
               <span className="text-brand-primary">Zod</span> &{' '}
-              <span className="text-brand-primary">Prisma</span> — Instantly.
+              <span className="text-brand-primary">Prisma</span> Instantly.
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">

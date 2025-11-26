@@ -84,14 +84,14 @@ export function OutputTabs({ onShare }: OutputTabsProps) {
   const hasContent = currentOutput.content.trim().length > 0
 
   return (
-    <div className="flex flex-col h-full border rounded-lg overflow-hidden bg-card">
+    <div className="flex flex-col h-full border rounded-lg overflow-hidden bg-card shadow-sm">
       <Tabs
         value={activeTab}
         onValueChange={(value) => setActiveTab(value as typeof activeTab)}
         className="flex flex-col h-full"
       >
         {/* Header with Tabs */}
-        <div className="flex items-center justify-between px-4 py-2 border-b bg-muted/50">
+        <div className="flex items-center justify-between px-4 py-3 border-b bg-muted/50">
           <TabsList>
             <TabsTrigger value="typescript">TypeScript</TabsTrigger>
             <TabsTrigger value="zod">Zod</TabsTrigger>
