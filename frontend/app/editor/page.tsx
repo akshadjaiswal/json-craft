@@ -5,6 +5,7 @@ import { JsonInputPanel } from '@/components/editor/json-input-panel'
 import { OutputTabs } from '@/components/editor/output-tabs'
 import { EditorToolbar } from '@/components/editor/editor-toolbar'
 import { ShareDialog } from '@/components/editor/share-dialog'
+import { ThemeToggle } from '@/components/ui/theme-toggle'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -23,6 +24,7 @@ export default function EditorPage() {
               <span className="text-brand-primary">JSON</span>Craft
             </span>
           </Link>
+          <ThemeToggle />
         </div>
       </header>
 
