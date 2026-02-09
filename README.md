@@ -93,39 +93,7 @@
    NEXT_PUBLIC_BASE_URL=http://localhost:3000
    ```
 
-4. **Set up Supabase Database**
-
-   Run this SQL in your Supabase SQL Editor:
-
-   ```sql
-   -- Create conversions table
-   create table conversions (
-     id uuid primary key default gen_random_uuid(),
-     slug text unique not null,
-     json_input text not null,
-     ts_output text not null,
-     zod_output text not null,
-     prisma_output text not null,
-     created_at timestamptz not null default now()
-   );
-
-   -- Enable Row Level Security
-   alter table conversions enable row level security;
-
-   -- Allow public read access
-   create policy "Allow public read"
-   on conversions
-   for select
-   using (true);
-
-   -- Allow public insert
-   create policy "Allow public insert"
-   on conversions
-   for insert
-   with check (true);
-   ```
-
-5. **Run the development server**
+4. **Run the development server**
    ```bash
    npm run dev
    # or
@@ -134,7 +102,7 @@
    pnpm dev
    ```
 
-6. **Open the app**
+5. **Open the app**
 
    Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
 
