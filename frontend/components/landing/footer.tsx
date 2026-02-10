@@ -104,7 +104,7 @@ export function Footer() {
             Made with <Heart className="h-4 w-4 text-red-500 fill-red-500" /> for developers
           </p>
           <p className="text-sm text-muted-foreground">
-            © {currentYear} JSONCraft. All rights reserved.
+            © 2026 JSONCraft. All rights reserved.
           </p>
         </div>
       </div>
