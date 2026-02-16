@@ -1,11 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 import { QueryProvider } from '@/lib/query-provider'
 import { Toaster } from '@/components/ui/toaster'
 import { ThemeProvider } from '@/components/providers/theme-provider'
-
-const inter = Inter({ subsets: ['latin'], weight: ['300', '400', '500', '600'] })
 
 export const metadata: Metadata = {
   title: 'JSONCraft - Convert JSON to TypeScript, Zod & Prisma',
@@ -20,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className="font-sans antialiased">
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
